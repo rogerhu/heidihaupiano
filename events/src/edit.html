@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+<title>Heidi Hau</title>
+</head>
+
+<body>
+<div class="wrapper">
+<img src="images/e_10.gif" class="topofbox">
+
+<div class="content">
+
+    <h2><b>Upcoming Events</b></h2>
+    {% for event in upcomingevents %}
+        <p><b>{{ event.what }}</b><br />
+	Date: {{ event.date }}<br />
+	Time: {{ event.time }}<br />
+	Where: {{ event.where }}<br />
+	Description: {{ event.desc }}<br />
+	</p>
+    {% endfor %}
+
+    <h2><b>Past Events</b></h2>
+    {% for event in pastevents %}
+        <p><b>{{ event.what }}</b><br />
+	Date: {{ event.date }}<br />
+	Time: {{ event.time }}<br />
+	Where: {{ event.where }}<br />
+	Description: {{ event.desc }}<br />
+	</p>
+    {% endfor %}
+
+    <form action="/sign" method="post">
+            <div>Name of Event: <br /><input type="text" name="what" size="60" maxlength="120"></div>
+            <div>Date (MM/DD/YY): 
+		<input type="text" name="month" size="2" maxlength="2">/
+		<input type="text" name="day" size="2" maxlength="2">/
+		<input type="text" name="year" size="2" maxlength="2">
+		<br />
+		Time (24 Hour, HH:MM):
+		<input type="text" name="hour" size="2" maxlength="2">:
+		<input type="text" name="minute" size="2" maxlength="2">
+            </div>
+            <div>Where: <br /><textarea name="where" rows="3" cols="60"></textarea></div>
+            <div>Description: <br /><textarea name="desc" rows="3" cols="60"></textarea></div>
+            <div><input type="submit" value="Add Event"></div>
+          </form>
+
+          <form action="/delete" method="post">
+            <div>Delete Event with Name (Case Sensitive):<br /><input type="text" name="delwithdesc" size="60" maxlength="120"></div>
+            <div><input type="submit" value="Delete"></div>
+          </form>
+
+<img src="images/e_12.gif" class="bottomofbox">
+<div class="copyright">
+	<img src="images/spacer.gif" height="15" width="751" />
+		Copyright &copy; 2009 Heidi Tyan. &nbsp;All rights reserved.
+    <img src="images/spacer.gif" height="15" width="751" />
+</div>
+
+
+</div>
+
+
+</div>
+
+</body>
+</html>

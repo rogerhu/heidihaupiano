@@ -1,0 +1,160 @@
+{% extends "main_form.html" %}
+{% block content %}
+
+  <h2>Upcoming Concerts</h2>
+  
+      <p><span style="font-weight: bold">Opening Concert "Delicacy" with the Monterey Symphony</span><br />
+Concerto for Two Pianos in E-flat Major, KV. 365 by Wolfgang Amadeus Mozart<br />
+   (with John O'Conor, piano)<br />
+Concerto No. 11 in D Major by Franz Joseph Haydn<br />
+Monterey Symphony (Max Bragado-Darman, conducting)<br />
+Steinbeck Institute for Arts and Culture<br /> 
+940 N. Main St., Salinas, CA<br />
+    Date: October 19, 2012<br />
+    Time: 7:30 p.m.</p>
+    <p><span style="font-weight: bold">Opening Concert "Delicacy" with the Monterey Symphony</span><br />
+Concerto for Two Pianos in E-flat Major, KV. 365 by Wolfgang Amadeus Mozart<br />
+   (with John O'Conor, piano)<br />
+Concerto No. 11 in D Major by Franz Joseph Haydn<br />
+Monterey Symphony (Max Bragado-Darman, conducting)<br />
+Sunset Center<br /> 
+San Carlos Street at Ninth Avenue, Carmel-by-the-Sea, CA<br />
+    Date: October 20, 2012<br />
+    Time: 8 p.m.</p>
+<p><span style="font-weight: bold">Opening Concert "Delicacy" with the Monterey Symphony</span><br />
+Concerto for Two Pianos in E-flat Major, KV. 365 by Wolfgang Amadeus Mozart<br />
+   (with John O'Conor, piano)<br />
+Concerto No. 11 in D Major by Franz Joseph Haydn<br />
+Monterey Symphony (Max Bragado-Darman, conducting)<br />
+Sunset Center<br /> 
+San Carlos Street at Ninth Avenue, Carmel-by-the-Sea, CA<br />
+    Date: October 21, 2012<br />
+    Time: 3 p.m.</p>
+    <p><span style="font-weight: bold">Dame Myra Hess Memorial Concert Series</span><br />
+Preston Bradley Hall<br />
+Chicago Cultural Center<br />
+78 East Washington Street (North Michigan Avenue), Chicago, IL<br />
+   Date: May 8, 2013<br />
+   Time: TBD<br />
+   </p>
+  
+  <!--
+  <p><span style="font-weight: bold">Old First Concerts (September 16, 2012)</span><br />
+Old First Church<br />
+1751 Sacramento Street, San Francisco, CA<br />
+4 p.m.<br />
+   </p>
+  <p><span style="font-weight: bold">Saturday, March 27, 2010, 8:00 PM   AND Sunday, March 28th, 2010, 3:00pm  <br />
+</span>Beethoven's 4th Piano Concerto (with the American Philharmonic)</p>
+<p>Wells Fargo Center for the Arts<br />
+    50 Mark West Springs Road<br />
+Santa Rosa, CA US</p>
+<p>More details can be found at   <a href="http://www.apsonoma.org/">http://www.apsonoma.org/</a>.</p>
+  -->
+<p style="padding-top: 5px">Please sign up to be added to the mailing list for advanced notice of future concerts:</p>
+<form id="form" name="form" method="post" action="/submit">
+  <table width="271" border="0">
+    <tr>
+      <td width="113">
+        <div align="right" style="font-weight: bold">First Name:</div>
+      </td>
+      <td width="148"><input name="first" type="text" size="24" maxlength="30" class="validate['required','alpha','length[2,30]']" /></td>
+    </tr>
+    <tr>
+      <td><div align="right" style="font-weight: bold">Last Name:</div></td>
+      <td><input name="last" type="text" size="24" maxlength="30" class="validate['required','alpha','length[2,30]']" /></td>
+    </tr>
+    <tr>
+      <td><div align="right" style="font-weight: bold">Email: </div></td>
+      <td><input name="email" type="text" size="24" maxlength="50" class="validate['required','email']" /></td>
+    </tr>
+    <tr>
+      <td><div align="right">
+        
+      </div></td>
+      <td><div align="center">
+        <input name="submit" value="submit" type="submit" alt="Submit">
+        <input name="reset" value="reset" type="reset" alt="Reset">
+      </div></td>
+    </tr>
+  </table>
+  </form>
+
+  <h2>Past Concerts</h2>
+  <p><span style="font-weight: bold">December 4, 2011</span><br />
+The Steinway Society<br />
+Solo Recital<br />
+Le Petit Trianon
+(San Jose, CA)</p>
+  <p><span style="font-weight: bold">October 23, 2011</span><br />
+Franz Liszt 200th Birthday Gala Concert<br />
+Solo Recital<br />
+Old First Church
+(San Francisco, CA)</p>
+  <p><span style="font-weight: bold">March 28, 2010</span><br />
+Piano Concerto No. 4 by Ludwig van Beethoven<br />
+American Philharmonic (Gabriel Sakakeeny, conducting)<br />
+Wells Fargo Center for the Arts 
+(Santa Rosa, CA)</p>
+  <p><span style="font-weight: bold">March 27, 2010</span><br />
+Piano Concerto No. 4 by Ludwig van Beethoven<br />
+American Philharmonic (Gabriel Sakakeeny, conducting)<br />
+Wells Fargo Center for the Arts 
+(Santa Rosa, CA)</p>
+<p><span style="font-weight: bold">March 21, 2009</span><br />
+Piano Concerto No. 2 by Dmitri Shostakovich<br />
+Peninsula Symphony (Mitchell Sardou Klein, conducting)<br />
+Flint   Center
+(Cupertino, CA)</p>
+  <p><span style="font-weight: bold">March 20, 2009</span><br />
+    Piano Concerto No. 2 by Dmitri Shostakovich<br />
+    Peninsula Symphony
+    (Mitchell Sardou Klein, conducting)<br />
+    San Mateo  Performing Arts Center
+    (San Mateo, CA)</p>
+  <p><span style="font-weight: bold">November 23, 2008</span><br />
+    Piano Concerto No. 2 by Sergei Rachmaninoff<br />
+    American Philharmonic (Richard Williams, conducting)<br />
+    Wells   Fargo Center  for the Arts (Santa Rosa, CA)</p>
+  <p><span style="font-weight: bold">November 22, 2008</span><br />
+    Piano Concerto No. 2 by Sergei Rachmaninoff<br />
+    American Philharmonic (Richard Williams, conducting)<br />
+    Wells   Fargo Center  for the Arts
+    (Santa Rosa, CA)</p>
+  <p><span style="font-weight: bold">April 26, 2008</span><br />
+    Trinity Chamber Concerts<br />
+    Solo Recital<br />
+    Trinity Chapel (Berkeley, CA)</p>
+  <p><span style="font-weight: bold">April 19,   2008</span><br />
+    Benefit Concert for the Salvation Army<br />
+    Solo Recital<br />
+    Los Altos   First Baptist   Church of Los Altos (Los Altos, CA)</p>
+  <p><span style="font-weight: bold">May 12, 2007</span><br />
+    University   of San Francisco  Performing Arts Series<br />
+    Solo Recital<br />
+    Presentation Theater at UCSF (San Francisco, CA)</p>
+  <p><span style="font-weight: bold">October   9, 2005</span><br />
+    Solo Recital<br />
+    San Francisco Conservatory of Music
+    (San Francisco, CA)</p>
+  <p><span style="font-weight: bold">October   6, 2005</span><br />
+    Solo Recital<br />
+    National Gallery of Ireland (Dublin, Ireland)</p>
+  <p><span style="font-weight: bold">October 3, 2005</span><br />
+    Solo Recital<br />
+    John Field Room (Dublin, Ireland)</p>
+  <p><span style="font-weight: bold">September   21, 2005</span><br />
+    University   of San Francisco  Performing Arts Series<br />
+    Solo Recital<br />
+    Presentation Theater at UCSF (San Francisco, CA)</p>
+  <p><span style="font-weight: bold">August   23, 2005</span><br />
+    Festival Internacional de Piano Millennium<br />
+    Solo Recital<br />
+    Colegiata San Juan  Bautista (Gijon, Spain)</p>
+  <p><span style="font-weight: bold">March 16,   2005</span><br />
+    Music@6 Recital Series<br />
+    Solo Recital<br />
+    Teteuchi Hall,
+    Community   School of Music and Arts (Mountain View, CA)</p>
+
+{% endblock content %}

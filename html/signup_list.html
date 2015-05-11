@@ -1,0 +1,26 @@
+<head>
+<title>Heidi Hau</title>
+<link rel="stylesheet" href="/css/civio.css" type="text/css">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+
+</head>
+
+<body>
+  <div id="main">
+    <table class="list">
+      <th class="name"> Name - Last/First </th>
+      <th id="city"> Email </th>
+      <th id="party"> Datetime Posted </th>
+      {% for p in record_list %}
+      <tr class="{% cycle row1,row2 %}">
+        <td> {{ p.name }} </td>
+        <td> {{ p.email }}</td>
+        <td> {{ p.datetime_posted }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+
+</body>
+
+</html>

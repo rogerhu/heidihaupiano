@@ -1,0 +1,167 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background-color: #000000;	
+	font-family: "Trebuchet MS";
+	font-size: 12px;
+	color: #000000;
+}
+table
+{
+	margin-left: 25px;
+}
+
+A {
+	color: gray;
+}
+
+
+img
+{
+	border: none;
+}
+div.wrapper
+{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	top: 20px;
+	width: 751px;
+	height: auto;
+}
+img.header1
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+img.header2
+{
+	position: absolute;
+	left: 126px;
+	top: 49px;
+}
+img.home
+{
+	position: absolute;
+	top: 0px;
+	left: 126px;
+}
+img.bio
+{
+	position: absolute;
+	top: 0px;
+	left: 222px;
+}
+img.concerts
+{
+	position: absolute;
+	top: 0px;
+	left: 303px;
+}
+img.gallery
+{
+	position: absolute;
+	top: 0px;
+	left: 418px;
+}
+img.personal
+{
+	position: absolute;
+	top: 0px;
+	left: 534px;
+}
+img.contact
+{
+	position: absolute;
+	top: 0px;
+	left: 645px;
+}
+img.topofbox
+{
+	position: absolute;
+	left: 0px;
+	top: 123px;
+}
+div.content
+{
+	position: absolute;
+	top: 151px;
+	left: 0px;
+	width: 751px;
+	background-image:url(../images/nav/bg.gif);
+	background-repeat: repeat-y;
+	height: auto;
+	text-align: left;
+}
+p
+{
+	margin-left: 25px;
+	margin-right: 25px;
+}
+h2
+{
+	margin-left: 25px;
+	margin-right: 25px;
+}
+embed
+{
+	position: relative;
+	top: 0px;
+	margin-top: 0px;
+	margin-left: 16px;
+	margin-bottom: -7px;
+}
+.embed
+{
+	position: relative;
+	top: 0px;
+	margin-top: 0px;
+	margin-left: 16px;
+	margin-bottom: -7px;
+}
+img.bottomofbox
+{
+	margin-bottom: 0px;
+}
+div.copyright
+{
+	text-align: center;
+	background: #000000;
+	color: #FFFFFF;
+	width: 751px;
+	height: auto;
+}
+div.contact
+{
+	background: url(../images/contacts_bg.jpg);
+	position: relative;
+	width: 721px;
+	height: 450px;
+	left: 16px;
+	margin-bottom: -7px;
+}
+input.button
+{
+	position: absolute;
+	top: 321px;
+	left: 141px
+}
+div.first
+{
+	position: absolute;
+	top: 216px;
+	left: 151px;
+}
+div.last
+{
+	position: absolute;
+	top: 240px;
+	left: 151px;
+}
+div.email
+{
+	position: absolute;
+	top: 265px;
+	left: 127px;
+}

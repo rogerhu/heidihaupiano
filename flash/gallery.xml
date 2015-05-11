@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gallery>
+	<album title="Performances" 
+	description="Photos of Heidi Hau in concert at Flint Center (Cupertino, CA), San Mateo Performing Arts Center (San Mateo, CA), Wells Fargo Center for the Performing Arts (Santa Rosa, CA), Loyola University (New Orleans, LA), Texas Christian University (Fort Worth, TX); Forbidden City Concert Hall (Beijing, China)." 
+	lgpath="gallery/performances/" 
+	tn="gallery/banners/performances.jpg" 
+	tnpath="gallery/performances/thumbnails/">
+		<img src="01.jpg" />
+		<img src="02.jpg" />
+		<img src="03.jpg" />
+		<img src="04.jpg" />
+		<img src="05.jpg" />
+		<img src="06.jpg" />
+		<img src="07.jpg" />
+		<img src="08.jpg" />
+		<img src="09.jpg" />
+		<img src="10.jpg" />
+	</album>
+	<album title="Portraits" 
+	description="Photos of Heidi Hau in her studio.  Reprinted with the permission of Irvin E. Tyan." 
+	lgpath="gallery/portraits/" 
+	tn="gallery/banners/portraits.jpg" 
+	tnpath="gallery/portraits/thumbnails/">
+		<img src="01.jpg" />
+		<img src="02.jpg" />
+		<img src="03.jpg" />
+		<img src="04.jpg" />
+		<img src="05.jpg" />
+		<img src="06.jpg" />
+		<img src="07.jpg" />
+		<img src="08.jpg" />
+		<img src="09.jpg" />
+	</album>
+	<album title="Other Projects" 
+	description="Photos of Heidi Hau directing the annual Marilyn Mindell Piano Competition at Stanford University, hosting the annual Young Musicians' Competition televised on Peninsula TV Channel 26, and leading music workshops at local elementary schools in the San Francisco Bay Area." 
+	lgpath="gallery/other_projects/"  
+	tn="gallery/banners/other_projects.jpg" 
+	tnpath="gallery/other_projects/thumbnails/">
+		<img src="01.jpg" />
+		<img src="02.jpg" />
+		<img src="03.jpg" />
+		<img src="04.jpg" />
+		<img src="05.jpg" />
+	</album>
+	<album title="Videos" 
+	description="Excerpts of Heidi Hau performing the Shostakovich Piano Concerto No. 2 with the Peninsula Symphony (Mitchell Klein conducting), and the Rachmaninoff Piano Concerto No. 2 with the American Philharmonic (Richard Williams conducting)." 
+	tn="gallery/banners/video.jpg">
+		<img src="http://www.heidihau.com.s3.amazonaws.com/shostakovich.flv" tn="gallery/videos/thumbnails/shostakovich.jpg" />
+		<img src="http://www.heidihau.com.s3.amazonaws.com/rachmaninoff.flv" tn="gallery/videos/thumbnails/rachmaninoff.jpg" />
+	</album>
+</gallery>

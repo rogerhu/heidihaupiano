@@ -1,0 +1,23 @@
+{% extends "main_form.html" %}
+{% block content %}
+
+<div class="contact">
+<form id="form" name="form" method="post" action="/submit">
+
+<div class="first">
+<input name="first" type="text" class="validate['required','alpha','length[2,30]']" size="24" />
+</div>
+
+<div class="last">
+<input name="last" type="text" class="validate['required','alpha','length[2,30]']" size="24" />
+</div>
+
+<div class="email">
+<input name="email" type="text" class="validate['required','email']" size="28" />
+</div>
+
+<input name="submit" type="image" src="images/contacts_button.gif" alt="Submit" class="button">
+</form>
+</div>
+
+{% endblock content %}

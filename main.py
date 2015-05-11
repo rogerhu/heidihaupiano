@@ -44,9 +44,9 @@ def administrator(handler_method):
             handler_method(self, *args)
         else:
             raise webapp.Error("You're not allowed to view these pages")
-        
+
     return check_login
-    
+
 class MainPage(webapp.RequestHandler):
   def get(self, url):
     acceptedUrls = ["intro", "home", "bio", "concerts", "gallery", "personal", "contact", "submit_msg"]
@@ -75,7 +75,7 @@ class List_Signups(webapp.RequestHandler):
     def get(self):
         records = Person.all()
         records.order('submittedDate')
-            
+
         record_list = []
 
 # Convert UTC datetime to US Pacific
@@ -87,10 +87,10 @@ class List_Signups(webapp.RequestHandler):
         pst = timezone('US/Pacific')
         utc_tz = utc
 
-        for record in records:         
+        for record in records:
           loc_dst = utc_tz.localize(record.submittedDate)
           loc_datetime_posted = loc_dst.astimezone(pst).strftime('%m/%d/%y %I:%M:%S %p')
-          
+
           record_list += [{"name": " ".join([record.firstName, record.lastName]), "email": record.emailAddress, "datetime_posted": loc_datetime_posted}]
 
         render_page(self, 'signup_list', {
@@ -112,15 +112,8 @@ def render_page(self, pagename, template_values):
 ##### Main methods #####
 ########################
 
-def main():
-  application = webapp.WSGIApplication(
-    [('/submit', SubmitPage), 
-     ('/list', List_Signups),
-     ('/(.*)', MainPage)],
-     debug=True)
-  
-  wsgiref.handlers.CGIHandler().run(application)
-
-
-if __name__ == "__main__":
-  main()
+application = webapp.WSGIApplication(
+  [('/submit', SubmitPage),
+   ('/list', List_Signups),
+   ('/(.*)', MainPage)],
+  debug=True)
